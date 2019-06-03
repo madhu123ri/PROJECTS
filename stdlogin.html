@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>STUDENT LOGIN</title>
+<style>
+
+
+
+body{
+background:url("h8.jpg");
+background-repeat:no-repeat;
+background-size: 100%;
+padding-top:50px;
+margin-left:20px;
+
+}
+
+​img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	
+}
+ 
+	#header{
+	width:99.65%;
+	height:49%;
+	background:white;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:whitesmoke;
+   color: navy;
+   text-align:center;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<img src="L1.bmp" alt="Smiley face" height="40%" width="99.65%">
+
+<div id="header">
+<img src="book.jpg" align="left"alt="Smiley face"height="292" width="220">
+<img src="h12.jpg" align="right"alt="Smiley face"height="292" width="220">
+
+<form action="stdlogin.php"method="post">
+    <div class="input-group">
+        <label>STUDENT LOGIN</label>
+    </div>
+   
+   <div class="input-group">
+   
+   <label>StudentName</label><input type="text" name="studentname">
+   </div>
+      <div class="input-group">
+   <label>HallTicketNo</label>
+   <input type="text" name="hallticketno">
+   </div>
+   <div class="input-group">
+   <label>Password</label>
+   <input type="password" name="password">
+   </div><br>
+
+   <input type="submit" value="LOGIN" class="btn"></button>
+  
+    <p>
+   Not yet a member?<a href="stdregister.html">Sign Up</a>
+   </p>
+   
+   
+   </form>
+
+</div>
+
+<div class="footer">
+	<h3>Copyright@2018 LIBRARY MANAGEMENT SYSTEM | Done by: SIRIPURAM ARUN, SYED HASHIM REJA</h3>
+  </div>
+
+</body>
+</html>

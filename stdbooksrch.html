@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>BOOK SEARCH</title>
+<style>
+
+
+
+body{
+background:url("h8.jpg");
+background-repeat:no-repeat;
+background-size: 100%;
+padding-top:50px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: left;
+}
+
+a {
+text-decoration:none;
+color:white;
+}
+​img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	
+}
+ul,li{
+	list-style:none;
+	padding:10px;
+	float:left;
+	background-color:#000000;
+	border-radius:20px;
+	padding-right:10px;
+	
+}
+
+ 
+	#header{
+	width:100%;
+	height:15%;
+	background:silver;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:whitesmoke;
+   color: navy;
+   text-align:center;
+}
+#b2{
+	width:100%;
+	height:50%;
+	background:white;
+}
+</style>
+</head>
+
+<body>
+
+
+<img src="L1.bmp" alt="Smiley face" height="30%" width="100%">
+<div id="header">
+<ul>
+ <li> <a href="stdbooksrch.html"> BOOKS SEARCH&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+ <li> <a href="viewdate.html">VIEWDATE INFO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+ <li> <a href="returnbook.html">RETURN BOOK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</a></li>
+  <li> <a href="placeorder.html">PLACE ORDER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
+ <li> <a href="home.html">LOGOUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+ <li style="padding-left:20em;"><a><strong>Welcome: </strong><strong style="color:red"><?php session_start(); echo $_SESSION['htnumber']; ?></strong></a></li>
+</ul>
+</div>
+
+
+
+<div id="b2">
+<form name="frm" action="stdbooksrch.php" method="post" >
+
+<table border="0" align="center" cellpadding="10">
+<tr>
+<th><u>BOOK SEARCH&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>BOOK NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="bookname"></td>&nbsp;<td><input type="SUBMIT" VALUE="SEARCH" ></td>
+<tr>
+
+</table>
+</div>
+
+<div class="footer">
+	<h3>Copyright@2018 LIBRARY MANAGEMENT SYSTEM | Done by: SIRIPURAM ARUN, SYED HASHIM REJA</h3>
+  </div>
+
+</body>
+</html>
